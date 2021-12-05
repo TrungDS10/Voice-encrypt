@@ -104,14 +104,14 @@ class Win2:
         self.l1.pack(expand='yes')
         self.t1 = tk.Text(self.master, height=5, width=40, borderwidth=1,relief='solid')
         self.t1.pack(expand='yes')
-        self.btnSpeak = tk.Button(self.master, fg= 'white', font= Font, width= 10, text= 'Voice', bg= 'blue', command= self.speak)
+        self.btnSpeak = tk.Button(self.master, fg= 'white', font= Font, width= 10, text= 'Voice', bg= 'maroon', command= self.speak)
         self.btnSpeak.pack(expand='yes')
 
         self.lkey = tk.Label(self.master, text='Secret key', font=Font, bg='palegreen', fg='red2')
         self.lkey.pack(expand='yes')
         self.tkey = tk.Entry(self.master, width=55, borderwidth=1, relief='solid')
         self.tkey.pack(expand='yes')
-        self.btnSpeak1 = tk.Button(self.master, text='Voice', command= self.speak1, font= Font, width= 10, bg= 'blue',  fg= 'white')
+        self.btnSpeak1 = tk.Button(self.master, text='Voice', command= self.speak1, font= Font, width= 10, bg= 'maroon',  fg= 'white')
         self.btnSpeak1.pack(expand='yes')
 
         self.b1 = tk.Button(self.master,text='Encrypt',command=self.encrypts,font=Font,bg='maroon',fg='white',width=10)
