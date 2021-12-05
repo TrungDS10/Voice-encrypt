@@ -164,11 +164,6 @@ class Win3:
                 else:
                     pass
 
-    def say(self):
-        engine.say(self.t2)
-        engine.runAndWait()
-        engine.stop()
-
     def __init__(self, master):
         self.master = master
         self.master.geometry('550x500+900+150')
@@ -193,8 +188,6 @@ class Win3:
         self.l2.pack(expand='yes')
         self.t2 = tk.Text(self.master, height=5, width=40, borderwidth=1, relief='solid', state='normal')
         self.t2.pack(expand='yes')
-        self.btnSay = tk.Button(self.master, text='Read', command= self.say, font= Font, width= 10, bg= 'blue',  fg= 'white')
-        self.btnSay.pack(expand='yes')
         self.quit = tk.Button(self.frame, text='Close', command=self.close_window, font=Font, bg='blue', fg='white', width=10)
         self.quit.pack()
         self.frame.pack(expand='true')
